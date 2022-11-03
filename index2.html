@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns:mso="urn:schemas-microsoft-com:office:office"
+  xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <header>
+    <title>Calculator App</title>
+    <h1 class="topTitle">Calculator</h1>
+  </header>
+
+  <body>
+    <form>
+      <label>Input Numbers</label>
+      <input type="text" />
+    </form>
+    <section class="numbers">
+      <button class="one">1</button>
+      <button class="two">2</button>
+      <button class="three">3</button>
+      <button class="four">4</button>
+      <button class="five">5</button>
+      <button class="plus">+</button>
+      <button class="equals">=</button>
+    </section>
+  </body>
+</html>
+<script type="text/javascript">
+  let number = document.querySelectorAll(".numbers ");
+  console.log(number);
+
+  const oneButton = document.querySelector(".one");
+  const equalsButton = document.querySelector(".equals");
+  const plusButton = document.querySelector(".plus");
+  oneButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    console.log("one");
+  });
+  plusButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    console.log("plus");
+  });
+
+  equalsButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    let arr = [];
+    arr.push("=");
+    console.log(arr);
+    console.log("equals");
+  });
+
+  function calc() {
+    let arrNum1 = [];
+    let arrNum2 = [];
+    let operator = [];
+    //how to reference arrs outside of function?
+    //onclick push to array 1
+    //on operator click, save operator
+    //on num click push to arr 2
+
+    let symbols = ["%", "*", "/", "-", "+", "*", "x"];
+  }
+</script>
+
+<script>
+  //number must come before operator
+  //onclick add to first or second array
+  //on operator click, save and start second array
+  //on click equals, connect arr1 and 2 dependent on operator.
+  //must store numbers in state
+  //on click must register the number as a value
+  //
+</script>
